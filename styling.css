@@ -1,0 +1,8 @@
+.NavBarUlList{
+    display: flex;
+    list-style-type: none;
+}
+.NavBarUlList a{
+    text-decoration: none;
+    color: black
+}
