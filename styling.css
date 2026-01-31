@@ -1,8 +1,49 @@
-.NavBarUlList{
+.NavList{
     display: flex;
     list-style-type: none;
+    gap: 32px;
+    padding:0px;
+    align-items: center;
+    font-family: Inter;
+    font-weight: 500;
+    /* ekhon ami line height add korbo figma teo jehetu width 25 e giyeche line height diye line er upor niche ektu baralam, copy kintu mari nai bhai */
+    line-height: 1.5;
+    
 }
-.NavBarUlList a{
+.NavList a{
     text-decoration: none;
     color: black
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0px;
+}
+.container{
+    max-width: 1296px;
+    /* jehetu amar screen size 1536 toh emnei figmar sathe halka mil mane dui pashe 120 kore rakhar jonno 1296 dilam */
+    margin: auto;
+
+}
+.GetEarlyMotherbutton{
+    width: 164px;
+    height: 44px;
+    padding: 12px 16px 12px 16px;
+    border-radius: 4px;
+    background-color: #30B868;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    /* border-color: #30B868;
+    font-weight:600;
+    /* font-size: 16px; */
+    outline: none; 
+    font-family:'Inter';
+    border: none;
+    font-size: 16px;
+}
+*{
+    margin: 0;
 }
