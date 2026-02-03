@@ -171,10 +171,11 @@ nav{
     gap: 16px;
     padding: 24px;
     flex:1;
-    border-radius: 8px;
+    border-radius: 8px 8px 0px 0px;
     box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.06);
     background: rgba(255, 255, 255, 1);
-    height: 300px;
+    height: 270px;
+    /* vai amar ekta prosno card section arr brain section evabe overlapp kivabe koriyechen? */
 }
 .Cardh2{
     font-family: 'Inter';
@@ -242,11 +243,41 @@ nav{
     display: flex;
     flex-direction: column;
     gap: 40px;
+    justify-content: center;
 }
 .SecondBrainSectionMother{
     display: flex;
     gap: 60px;
+    padding: 120px;
+}
+.CardSectionMother {
+    padding: 58px 0px 0px 0px;
+    
 } 
+.ReadyToThinkSectionParent h2{
+    color:rgba(0, 25, 49, 1);
+    font-family: 'Inter';
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    text-align: center;
+}
+.ReadyToThinkSectionParent p{
+    color:rgba(98, 115, 130, 1);
+    font-family:'Inter';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+}
+.ReadyToThinkSectionParent{
+    padding: 80px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
 *{
     margin: 0;
 }
