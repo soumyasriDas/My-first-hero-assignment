@@ -277,6 +277,7 @@ nav{
     align-items: center;
     justify-content: center;
     gap: 16px;
+    background-color: rgba(247, 246, 242, 1);
 }
 *{
     margin: 0;
