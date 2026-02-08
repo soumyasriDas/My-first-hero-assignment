@@ -311,3 +311,201 @@ nav{
 *{
     margin: 0;
 }
+/* adding hover effects as mentioned
+... in the challenge part */
+
+.GetEarlyMotherbutton{
+    z-index: 0;
+    position:relative;
+    cursor: pointer;
+}
+.GetEarlyMotherbutton::after{
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color:rgb(70, 145, 101);
+    border-radius: 4px;
+}
+/* glow */
+.GetEarlyMotherbutton::before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -2px;
+    left: -2px;
+    background:linear-gradient(
+        45deg,
+        #FF0000, #FF7300, #FFFB00, #48FF00,
+        #00FFD5, #002BFF, #FF00C8, #FF0000
+    );
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    border-radius: 4px;
+    filter: blur(8px);
+    background-size: 600%;
+    animation:glowing 20s linear infinite;
+    transition: opacity  .3s ease-in-out;
+    opacity: 0;
+
+}
+@keyframes glowing {
+    0% {background-position: 0 0;}
+    50% {background-position: 400% 0;}
+    100% {background-position: 0 0;}
+}
+.GetEarlyMotherbutton:hover::before{
+    opacity: 1;
+}
+.GetEarlyMotherbutton:active::after{
+    background: transparent;
+}
+.EANOButton{
+    z-index: 0;
+    position:relative;
+    cursor: pointer;
+}
+.EANOButton::after{
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color:white;
+    border-radius: 1000px;
+}
+/* glow2 */
+.EANOButton::before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -2px;
+    left: -2px;
+    background:linear-gradient(
+        45deg,
+        #FF0000, #FF7300, #FFFB00, #48FF00,
+        #00FFD5, #002BFF, #FF00C8, #FF0000
+    );
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    border-radius: 4px;
+    filter: blur(8px);
+    background-size: 600%;
+    animation:glowing 20s linear infinite;
+    transition: opacity  .3s ease-in-out;
+    opacity: 0;
+
+}
+@keyframes glowing {
+    0% {background-position: 0 0;}
+    50% {background-position: 400% 0;}
+    100% {background-position: 0 0;}
+}
+.EANOButton:hover::before{
+    opacity: 1;
+}
+.EANOButton:active::after{
+    background: transparent;
+}
+.SYOVButton{
+    z-index: 0;
+    position:relative;
+    cursor: pointer;
+}
+.SYOVButton::after{
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color:rgb(70, 145, 101);
+    border-radius: 4px;
+}
+/* glow3 */
+.SYOVButton::before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -2px;
+    left: -2px;
+    background:linear-gradient(
+        45deg,
+        #FF0000, #FF7300, #FFFB00, #48FF00,
+        #00FFD5, #002BFF, #FF00C8, #FF0000
+    );
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    border-radius: 4px;
+    filter: blur(8px);
+    background-size: 600%;
+    animation:glowing 20s linear infinite;
+    transition: opacity  .3s ease-in-out;
+    opacity: 0;
+
+}
+@keyframes glowing {
+    0% {background-position: 0 0;}
+    50% {background-position: 400% 0;}
+    100% {background-position: 0 0;}
+}
+.SYOVButton:hover::before{
+    opacity: 1;
+}
+.SYOVButton:active::after{
+    background: transparent;
+}
+.SHIWButton{
+    z-index: 0;
+    position:relative;
+    cursor: pointer;
+}
+.SHIWButton::after{
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color:transparent;
+    border-radius: 4px;
+}
+/* glow4 */
+.SHIWButton::before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -2px;
+    left: -2px;
+    background:linear-gradient(
+        45deg,
+        #FF0000, green, #FF0000
+    );
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    border-radius: 4px;
+    filter: blur(8px);
+    background-size: 600%;
+    animation:glowing 20s linear infinite;
+    transition: opacity  .3s ease-in-out;
+    opacity: 0;
+
+}
+@keyframes glowing {
+    0% {background-position: 0 0;}
+    50% {background-position: 400% 0;}
+    100% {background-position: 0 0;}
+}
+.SHIWButton:hover::before{
+    opacity: 1;
+}
+.SHIWButton:active::after{
+    background: transparent;
+}
